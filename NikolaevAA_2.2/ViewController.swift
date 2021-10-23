@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         valueSlider()
     }
     
-    func valueSlider() {
+    private func valueSlider() {
         let red = redSliderOutlet.value
         let green = greenSliderOutlet.value
         let blue = blueSliderOutlet.value
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         colorView(red: red, green: green, blue: blue)
     }
     
-    func colorView(red: Float, green: Float, blue: Float) {
+    private func colorView(red: Float, green: Float, blue: Float) {
         let redCGFloat = CGFloat(red)
         let greenCGFloat = CGFloat(green)
         let blueSGFloat = CGFloat(blue)
