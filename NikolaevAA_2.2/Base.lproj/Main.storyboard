@@ -23,15 +23,21 @@
                                     <constraint firstAttribute="height" constant="189" id="fkf-CP-rsH"/>
                                 </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-TG-4ES">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-TG-4ES">
                                 <rect key="frame" x="128" y="313" width="268" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <color key="thumbTintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="redSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="6SW-aE-u54"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oXP-Kv-A4B">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oXP-Kv-A4B">
                                 <rect key="frame" x="128" y="383" width="268" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <color key="thumbTintColor" systemColor="systemGreenColor"/>
+                                <connections>
+                                    <action selector="greenSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="Kw7-30-V2j"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlz-8q-RmY">
                                 <rect key="frame" x="30" y="313" width="70" height="20.5"/>
@@ -60,10 +66,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7pe-TU-9QH">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7pe-TU-9QH">
                                 <rect key="frame" x="128" y="453" width="268" height="31"/>
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                 <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                                <connections>
+                                    <action selector="blueSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="ZNK-n6-lUA"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -90,10 +99,19 @@
                             <constraint firstItem="7pe-TU-9QH" firstAttribute="leading" secondItem="fAK-mb-GuY" secondAttribute="trailing" constant="30" id="vhk-wN-6Be"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="fAK-mb-GuY" id="UQf-5m-zd2"/>
+                        <outlet property="blueSliderOutlet" destination="7pe-TU-9QH" id="4hC-K3-7kv"/>
+                        <outlet property="greenLabel" destination="etB-Sw-L1o" id="FyW-RE-rEv"/>
+                        <outlet property="greenSliderOutlet" destination="oXP-Kv-A4B" id="xtq-OI-ems"/>
+                        <outlet property="redLabel" destination="Nlz-8q-RmY" id="Ci3-df-6kU"/>
+                        <outlet property="redSliderOutlet" destination="Z8A-TG-4ES" id="hG6-so-2Ce"/>
+                        <outlet property="viewOutlet" destination="tws-Pq-vFR" id="Pan-Yc-9TM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217.39130434782609" y="75"/>
+            <point key="canvasLocation" x="-1090" y="82"/>
         </scene>
     </scenes>
     <resources>
